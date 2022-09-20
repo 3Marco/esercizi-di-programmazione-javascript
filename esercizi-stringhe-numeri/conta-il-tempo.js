@@ -12,3 +12,17 @@
 
   http://www.imparareaprogrammare.it
 */
+
+//Fatto
+
+var sec = 60
+var min = 60
+var hour = min*sec;
+var seconds = 12560;
+var calchour = (seconds/hour);
+var arrcalchour = Math.round(calchour);
+var calcmin = ((calchour-arrcalchour)*min);
+var arrcalcmin = Math.round(calcmin);
+var calcsec = ((calcmin-arrcalcmin)*sec);
+var arrcalcsec = Math.round(calcsec);
+console.log(seconds + ' secondi equivalgono a ' + arrcalchour + ' ore ' + arrcalcmin + ' minuti e ' + arrcalcsec + ' secondi');
