@@ -10,3 +10,13 @@
 
   http://www.imparareaprogrammare.it
 */
+
+//Fatto
+
+var a = 3;
+var b = -1;
+var c = 4;
+var d = -2;
+var max = Math.max(a, b, c, d);
+var min = Math.min(a, b, c, d);
+console.log('maggiore = ' + max + ', minore = ' + min);
