@@ -11,3 +11,12 @@
 
   http://www.imparareaprogrammare.it
 */
+
+//Fatto
+
+var bornyear = 1991;
+var nowyear = 2018;
+const secolo = 100;
+var age = nowyear-bornyear;
+var morelive = (bornyear+secolo)-nowyear;
+console.log('età : ' + age + ', anni mancanti : ' + morelive)
