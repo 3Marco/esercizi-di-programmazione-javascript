@@ -17,3 +17,12 @@
 
   http://www.imparareaprogrammare.it
 */
+
+//Fatto
+
+const gatti = 44;   //n gatti
+var gif = 6;        //n.gatti in ogni fila
+var nf = Math.ceil(gatti/gif);  //numero file 
+var gm = (nf*gif)-gatti;
+console.log('numero file :' + nf);
+console.log('gatti mananti ultima gila: '+ gm);
