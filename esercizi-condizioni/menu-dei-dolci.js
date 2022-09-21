@@ -34,9 +34,9 @@ var menu = ('             MENU: \n\
 
 console.log(menu);
 
-var scelta = 7
-;
+var scelta = 7;
 console.log('La tua scelta è: ' + scelta)
+
 switch (scelta) {
   case 1:
     console.log('Hai scelto il dolce Tiramisù');
