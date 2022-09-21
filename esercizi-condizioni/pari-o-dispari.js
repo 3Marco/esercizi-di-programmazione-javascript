@@ -15,3 +15,17 @@
 
   http://www.imparareaprogrammare.it
 */
+
+//Fatto
+
+var numero = 47;
+var resto = numero % 2;
+
+switch (resto) {
+  case 0:
+    console.log(0);
+    break;
+
+  default:
+    console.log(1);
+}
