@@ -18,7 +18,11 @@
 
 //Fatto
 
-var numero = 47;
+var max = 100;
+var min = 1;
+var numero = Math.floor(Math.random() * (max-min)+min);
+console.log('numero casuale è: ' + numero);
+
 var resto = numero % 2;
 
 switch (resto) {
