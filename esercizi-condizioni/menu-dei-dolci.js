@@ -33,8 +33,9 @@ var menu = ('             MENU: \n\
            ');
 
 console.log(menu);
-
-var scelta = 7;
+var max = 8;
+var min = 1;
+var scelta = Math.floor(Math.random() * (max-min)+min);
 console.log('La tua scelta è: ' + scelta)
 
 switch (scelta) {
