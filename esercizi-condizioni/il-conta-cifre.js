@@ -14,7 +14,11 @@
 
 //Fatto
 
-var numero = 6;
+var max = 9999;
+var min = 1;
+var numero = Math.floor(Math.random() * (max-min)+min);
+console.log('numero casuale è: ' + numero);
+
 
 var n = numero.toString()
 
