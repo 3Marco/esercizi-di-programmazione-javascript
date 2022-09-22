@@ -27,7 +27,11 @@
 
 //Giorno
 
-var giorno = 10;
+var max = 10;
+var min = 1;
+var giorno = Math.floor(Math.random() * (max-min)+min);
+console.log('la scelta casuale è: ' + giorno);
+
 switch (giorno) {
   case 1:
     console.log('"Lunedì"');
@@ -58,8 +62,10 @@ switch (giorno) {
 //Mese
 
 /*
-var mese = 10;
-
+var max = 20;
+var min = 1;
+var mese = Math.floor(Math.random() * (max-min)+min);
+console.log('la scelta casuale è: ' + mese);
 switch (mese) {
   case 1:
     console.log('"Gennaio"');
