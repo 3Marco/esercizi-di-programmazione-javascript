@@ -8,3 +8,17 @@
 
   http://www.imparareaprogrammare.it
 */
+
+//Fatto
+
+var max = 10;
+var min = 1;
+var numero = Math.floor(Math.random() * (max-min)+min);
+console.log('Ecco la tabellina del numero: ' + numero);
+
+var limit = 11;
+
+for (var i = 1; i < limit; i++) {
+  var tab = numero * i;
+  console.log(tab);
+}
