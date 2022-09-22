@@ -21,7 +21,10 @@
 
 //Fatto
 
-var voto = 22
+var max = 35;
+var min = 1;
+var voto = Math.floor(Math.random() * (max-min)+min);
+console.log('la scelta casuale è: ' + voto);
 
   if (voto < 18) {
     console.log('insufficiente');
