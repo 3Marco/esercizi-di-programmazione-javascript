@@ -14,3 +14,35 @@
 
   http://www.imparareaprogrammare.it
 */
+
+//Fatto
+
+var max = 6;
+var min = 1;
+var point1 = 0;
+var point2 = 0;
+var shoots = Math.floor(Math.random() * (max-min)+min);
+var step = 1
+var accumulator = step
+var pl1 = 0
+var pl2 = 0
+
+while (accumulator <= shoots) {
+accumulator += step
+point1 = Math.floor(Math.random() * (max-min)+min);
+pl1 += point1
+point2 = Math.floor(Math.random() * (max-min)+min);;
+pl2 += point2
+}
+
+if (pl1 < pl2) {
+  console.log('Il giocatore due tirando il dado ' + shoots + ' volte ha vinto col punteggio di ' + pl2 + ' a ' + pl1);
+}
+
+else if (pl1> pl2) {
+  console.log('Il giocatore uno tirando il dado ' + shoots + ' volte ha vinto col punteggio di ' + pl1 + ' a ' + pl2);
+}
+
+else {
+  console.log('Pareggio: Tirando il dado ' + shoots + ' volte, entrambi i giocatori hanno fatto lo stesso punteggio di ' + pl1)
+}
