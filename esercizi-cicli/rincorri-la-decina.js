@@ -31,7 +31,7 @@ while (accumulator < limit) {
  tab += accumulator;
  tab = tab.toString() + ' ';
    if (accumulator%10===0){
-     tab = tab.toString() + ' ' + '\n';
+     tab = tab.toString() + '\n';
    }
  }
 console.log(tab);
