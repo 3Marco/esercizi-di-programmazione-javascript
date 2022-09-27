@@ -19,3 +19,19 @@
 
   http://www.imparareaprogrammare.it
 */
+
+//Fatto
+
+var step = 1;
+var accumulator = 0;
+var limit = 100;
+var tab = 0;
+while (accumulator < limit) {
+ accumulator ++;
+ tab += accumulator;
+ tab = tab.toString() + ' ';
+   if (accumulator%10===0){
+     tab = tab.toString() + ' ' + '\n';
+   }
+ }
+console.log(tab);
