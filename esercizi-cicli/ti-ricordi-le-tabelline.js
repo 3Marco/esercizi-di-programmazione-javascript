@@ -16,9 +16,15 @@ var min = 1;
 var numero = Math.floor(Math.random() * (max-min)+min);
 console.log('Ecco la tabellina del numero: ' + numero);
 
+var step = 1
+var accumulator = step
 var limit = 11;
+var tab = 0
 
 for (var i = 1; i < limit; i++) {
-  var tab = numero * i;
-  console.log(tab);
+ accumulator += step
+ var num = numero*i
+ tab += num;
+var tab = tab.toString() + ' '
 }
+console.log(tab);
