@@ -21,7 +21,7 @@ var accumulator = step
 var limit = 11;
 var tab = 0
 
-for (var i = 1; i < limit; i++) {
+for (var i = 0; i < limit; i++) {
  accumulator += step
  var num = numero*i
  tab += num;
