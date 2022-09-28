@@ -18,7 +18,17 @@
 
 //Fatto
 
-var toinv = [3, 5, 10, 2, 8];
+var max = 15;
+var min = 2;
+var n = Math.floor(Math.random() * (max-min)+min);
+console.log('lunghezza array: ' + n);
 
-console.log('array originale: '+ toinv);
-console.log('array originale invertita: ' + toinv.reverse());
+var toinv = Array(n);
+
+var mx = 50;
+var mn = 1;
+for (var i = 0; i < toinv.length; i++) {
+  toinv[i] = Math.floor(Math.random() * (mx-mn)+mn);
+}
+console.log('originale: ' + toinv);
+console.log('invertita: ' + toinv.reverse());
