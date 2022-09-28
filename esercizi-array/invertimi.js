@@ -15,3 +15,10 @@
 
   http://www.imparareaprogrammare.it
 */
+
+//Fatto
+
+var toinv = [3, 5, 10, 2, 8];
+
+console.log('array originale: '+ toinv);
+console.log('array originale invertita: ' + toinv.reverse());
