@@ -12,3 +12,34 @@
 
   http://www.imparareaprogrammare.it
 */
+
+//Fatto
+
+var mx = 50;
+var mn = 1;
+var grp = Array();
+for (var i = 0; i < 100; i++) {
+  grp[i] = Math.floor(Math.random() * (mx+mn));
+};
+
+var app = 0;
+var check = true;
+while (check) {
+  console.log('Azzera i seguenti numeri : '+grp);
+    do {
+          app = parseInt(prompt("immetti valore compreso tra numeri interi 2 e 50"));
+       }
+          while (app <1 || app>50);
+            for(j=0; j<grp.length; j++){
+                  if(grp[j] % app === 0)	{
+                        grp[j] = 0;
+                  }
+            }
+            check = false;
+            for (var i = 0; i < grp.length; i++) {
+                  if (grp[i] > 0) {
+            check = true;
+                  }
+            }
+}
+console.log(grp + ' \n\Hai azzerato tutti i numeri!');
