@@ -7,3 +7,27 @@
 
   http://www.imparareaprogrammare.it
 */
+
+//Fatto
+
+var numbers = Array();
+var righe = 10;
+var colonne = 10;
+var tabella = '';
+var mx = 100;
+var mn = 1;
+for (var i = 0; i < colonne; i++) {
+    numbers[i] = Array();
+}
+for (var i = 0; i < righe; i++) {
+  for (var j = 0; j < colonne ; j++) {
+    numbers[i][j] = Math.floor(Math.random() * (mx-mn)+mn);
+  }
+}
+for (var i = 0; i < righe; i++) {
+  for (var j = 0; j < colonne ; j++) {
+    tabella += numbers[i][j] + ' ' + '\t';
+  }
+  tabella += '\n';
+}
+console.log(tabella);
