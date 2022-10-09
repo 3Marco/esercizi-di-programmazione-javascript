@@ -11,3 +11,24 @@
     
   http://www.imparareaprogrammare.it
 */
+
+//Fatto
+
+var tabelline = Array();
+for (var i = 0; i < 10; i++) {
+  tabelline[i] = Array();
+}
+var tabellone = 'x' + ' ' + '\t';
+for (var j = 0; j < 11; j++) {
+    tabellone += ' | ' + j + '\t';
+}
+tabellone += '\n';
+
+for (var i = 0; i < 11; i++) {
+  tabellone += i + '\t';
+  for (var j = 0; j < 11; j++) {
+      tabellone += ' | ' + i*j + '\t';
+    }
+  tabellone += '\n';
+}
+console.log(tabellone);
