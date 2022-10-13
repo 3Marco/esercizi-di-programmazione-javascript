@@ -13,3 +13,33 @@
 
   http://www.imparareaprogrammare.it
 */
+
+//Fatto: prima versione
+
+mx = 50;
+var mn = -50;
+var a = Math.floor(Math.random() * (mx-mn)+mn);
+var b = Math.floor(Math.random() * (mx-mn)+mn);
+var c = Math.floor(Math.random() * (mx-mn)+mn);
+console.log('Input: a = ' + a + ' , b = ' + b + ' , c = ' + c);
+function maggiore (a, b, c) {
+  return Math.max(a, b, c)
+}
+function minore (a, b, c) {
+  return Math.min(a, b, c)
+}
+var max = maggiore(a, b, c);
+var min = minore(a, b, c);
+console.log('Output: minore = ' + min + ', maggiore = ' + max);
+
+//versione Array
+
+var mx = 50;
+var mn = -50;
+var ins = Array();
+ins.length = Math.floor(Math.random() * 50+1);
+for (var i = 0; i < ins.length; i++) {
+  ins[i] = Math.floor(Math.random() * (mx-mn)+mn);
+};
+console.log('Input: matrice = [' + ins + ']');
+console.log('Output: minore = ' + (Math.min(...ins)) + ', maggiore = ' + (Math.max(...ins)));
