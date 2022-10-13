@@ -12,3 +12,16 @@
 
   http://www.imparareaprogrammare.it
 */
+
+//Fatto
+
+var num = Math.floor(Math.random() * 10+1);
+function fattoriale (n){
+     var ris = 1;
+     for (var i = 2; i < n+1; i++) {
+         ris *= i;
+     }
+     return ris;
+}
+var fat = fattoriale(num);
+console.log(fat + ' è il fattoriale di ' + num);
